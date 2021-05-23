@@ -2,10 +2,10 @@
  
  @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
  body {
-     font-family: 'Raleway Regular', 'Times New Roman';
+     font-family: "raleway light";
      height: 100%;
-     display: flex;
-     flex-direction: column;
+     padding: 0;
+     margin: 0;
  }
  
  .en-tete {
@@ -50,6 +50,10 @@
      margin-right: 10px;
  }
  
+ .barre-menu a {
+     border-top: 2px solid transparent;
+ }
+ 
  .barre-menu a:hover {
      color: blue;
      border-top: 2px solid #0065FC;
@@ -70,21 +74,21 @@
  
  .fa-map-marker-alt {
      background-color: #F2F2F2;
-     padding: 1rem 1.25rem;
-     border-radius: 1rem 0 0 1rem;
+     padding: 15px;
+     border-radius: 15px 0 0 15px;
      text-align: center;
      border: 1px solid #F2F2F2;
  }
  
  #search {
      background-color: white;
-     padding: 1rem 1.25rem;
+     padding: 15px;
      border: 1px solid #F2F2F2;
      text-align: start;
  }
  
  ::placeholder {
-     font-family: 'Raleway Regular', 'Times New Roman';
+     font-family: "raleway light";
      color: black;
      font-size: 1.2em;
      font-weight: bold;
@@ -92,11 +96,12 @@
  
  .btn-recherche {
      background-color: blue;
-     border-radius: 0 1rem 1rem 0;
+     border-radius: 0 15px 15px 0;
+     padding: 15px;
      border: none;
-     padding: 1rem 1.25rem;
      color: white;
      text-align: center;
+     cursor: pointer;
  }
  
  .filtres {
@@ -120,15 +125,15 @@
  }
  
  .btn-filtre {
-     font-family: 'Raleway Regular', 'Times New Roman';
+     font-family: "raleway light";
      color: black;
      font-weight: bold;
-     font-size: 1rem;
+     font-size: 1em;
  }
  
  .btn-filtre:hover {
      background-color: #DEEBFF;
-     border: none;
+     border: 2px solid transparent;
  }
  
  .btn-filtre i {
@@ -143,13 +148,14 @@
      justify-content: center;
      position: relative;
      left: -20px;
+     cursor: pointer;
  }
  
  .info-filtre {
      margin: 30px 0;
      display: flex;
      align-items: baseline;
-     font-size: 1.1rem;
+     font-size: 1.1em;
  }
  
  i.fas.fa-info {
@@ -228,8 +234,9 @@
  
  .pop {
      display: flex;
-     justify-content: space-around;
-     align-items: center;
+     justify-content: space-between;
+     padding: 0 5px;
+     margin: 0 15px;
  }
  
  .fas.fa-chart-line {
@@ -258,19 +265,88 @@
  
  .pop1 {
      display: flex;
-     flex-direction: row;
-     align-items: center;
  }
  
  .hotel-pop img {
      height: 150px;
-     width: 150px;
+     max-width: 150px;
+     min-width: 150px;
      object-fit: cover;
      border-radius: 15px 0 0 15px;
  }
  
  .etoile {
-     margin-top: 30px;
+     margin-top: 40px;
+ }
+ /*Activités a marseille*/
+ 
+ #activites {
+     display: flex;
+     flex-direction: column;
+     border-radius: 30px;
+     margin: 10px;
+     height: 450px;
+ }
+ 
+ #activites h2 {
+     padding-left: 20px;
+ }
+ 
+ .visite-site {
+     display: flex;
+     width: 100%;
+     height: 400px;
+ }
+ 
+ .bloc-de-une {
+     width: 25%;
+     margin: 15px 15px 15px 15px;
+     height: 350px;
+     box-shadow: 5px 3px 3px #F2F2F2;
+     border-radius: 15px 15px 15px 15px;
+ }
+ 
+ .bloc-de-deux {
+     width: 25%;
+     display: flex;
+     flex-direction: column;
+     margin: 15px 15px 15px 15px;
+     border-radius: 15px 15px 15px 15px;
+     height: 310px;
+ }
+ 
+ .visite-site h4 {
+     padding: 10px 0 0 20px;
+     margin: 0;
+ }
+ 
+ .bloc-de-deux img {
+     width: 100%;
+     height: 300px;
+     object-fit: cover;
+     border-radius: 15px 15px 0 0;
+ }
+ 
+ .bloc-de-une img {
+     width: 100%;
+     height: 300px;
+     object-fit: cover;
+     border-radius: 15px 15px 0 0;
+ }
+ 
+ .lieu-visite-deux1,
+ .lieu-visite-deux2 {
+     border-radius: 15px 15px 15px 15px;
+     box-shadow: 5px 3px 3px #F2F2F2;
+     margin-bottom: 15px;
+ }
+ 
+ .lieu-visite-deux1 img {
+     height: 150px;
+ }
+ 
+ .lieu-visite-deux2 img {
+     height: 120px;
  }
  /*footer*/
  
