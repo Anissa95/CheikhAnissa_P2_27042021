@@ -240,21 +240,23 @@
  /*popularités*/
  
  .pop {
+     width: 90%;
      display: flex;
      justify-content: space-between;
+     align-items: center;
      padding: 0 5px;
      margin: 0 15px;
  }
  
  .fas.fa-chart-line {
-     margin-left: 40px;
+     margin-left: 20px;
      padding: 5px;
  }
  
  #popularites {
      background-color: #F2F2F2;
      width: 30%;
-     padding: 20px;
+     padding: 10px;
      border-radius: 30px;
      margin: 20px;
  }
@@ -293,11 +295,11 @@
  /*Activités a marseille*/
  
  #activites {
+     position: relative;
      display: flex;
      flex-direction: column;
      border-radius: 30px;
      margin: 10px;
-     height: 450px;
  }
  
  #activites h2 {
@@ -364,13 +366,12 @@
  footer {
      width: 100%;
      background-color: #F2F2F2;
+     position: absolute;
  }
  
  .pied-page {
      display: flex;
-     justify-content: space-between;
      margin: 0;
-     padding: 0 20px;
  }
  
  .bas {
@@ -378,7 +379,6 @@
      padding: 0 40px;
      width: 100%;
      max-width: 300px;
-     position: center;
  }
  
  ul {
@@ -400,26 +400,156 @@
      color: blue;
  }
  
- @media screen and (max-width:1280px) {
-     footer {
+ @media screen and (min-width: 600px) and (max-width: 1024px) {
+     .heberg-pop {
+         width: 100%;
          display: flex;
          flex-direction: column;
-         justify-content: space-around;
-         height: auto;
+         margin: 0;
+         padding: 0;
      }
-     .pied-page {
+     .lieu-hebergement {
          flex-wrap: wrap;
+     }
+     #hebergements {
+         width: 90%;
+     }
+     #popularites {
+         width: 90%;
+     }
+     .hotel-pop {
+         height: 100px;
+     }
+     .hotel-pop img {
+         height: 100px;
+         width: 100px;
+     }
+     footer {
+         width: 100%;
+         margin: 0;
      }
  }
  
- @media screen and (max-width:800px) {
-     footer {
+ @media screen and (min-width: 320px) and (max-width: 600px) {
+     .en-tete {
+         background-color: brown;
+         flex-wrap: wrap;
+         height: 200px;
+     }
+     .logo {
+         height: 100px;
+         padding-left: 10px;
+     }
+     .en-tete {
+         margin: 0;
+         padding: 0;
+         width: 100%;
+     }
+     .barre-menu {
+         height: 100px;
          display: flex;
-         flex-direction: row;
          justify-content: space-around;
-         height: auto;
+     }
+     .bloc-recherche,
+     .titre,
+     .filtres {
+         padding-left: 10px;
+     }
+     .infos {
+         width: 100%;
+         padding: 0;
+         margin: 0;
+     }
+     .info-filtre {
+         margin: 20px;
+     }
+     .hebergement-activite {
+         width: 250px;
+         padding-left: 10px;
+     }
+     .filtre-hebergement,
+     #hebergements,
+     #popularites,
+     .galerie,
+     .pop1 {
+         width: 90%;
+         margin: 10px 0;
+     }
+     .bloc-info-heberg {
+         display: flex;
+         flex-direction: column;
+         height: 50px;
+     }
+     .pop {
+         padding: 0;
+         margin: 0;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+     }
+     .pop1 {
+         display: flex;
+         justify-content: flex-start;
+         align-items: center;
+         width: 100%;
+         margin: 0;
+     }
+     #hebergements {
+         background-color: white;
+         order: -1;
+     }
+     #popularites {
+         border-radius: 0;
+         margin: 0;
+         padding: 0;
+     }
+     #activites {
+         margin: 0;
+     }
+     .heberg-pop,
+     .lieu-hebergement,
+     .visite-site {
+         display: flex;
+         flex-direction: column;
+         align-content: center;
+         align-items: center;
+     }
+     .bloc-de-une {
+         width: 80%;
+         height: 200px;
+     }
+     .bloc-de-deux {
+         width: 80%;
+         padding: 10px;
+         height: 410px;
+     }
+     .lieu-visite-deux1,
+     .lieu-visite-deux2 {
+         width: 100%;
+         height: 200px;
+     }
+     h4 {
+         height: 50px;
+     }
+     h2 {
+         margin-left: 10px;
+     }
+     .bloc-de-une img,
+     .bloc-de-deux img {
+         height: 150px;
+     }
+     footer {
+         padding-bottom: 40px;
+         width: 100%;
+         font-size: 18px;
      }
      .pied-page {
-         max-width: 320px;
+         width: 100%;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+     }
+     .bas {
+         padding: 0;
      }
  }
