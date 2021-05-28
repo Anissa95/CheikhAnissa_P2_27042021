@@ -100,6 +100,11 @@
             cursor: pointer;
             display: flex;
             flex-direction: column;
+            font-weight: bold;
+        }
+        
+        .btn-recherche:hover {
+            background-color: rgb(38, 123, 219);
         }
         
         .loupe {
@@ -135,6 +140,7 @@
             color: black;
             font-weight: bold;
             font-size: 1em;
+            cursor: pointer;
         }
         
         .btn-filtre:hover {
@@ -338,12 +344,14 @@
         .bloc-de-une-carte {
             height: 400px;
             box-shadow: 5px 3px 3px #F2F2F2;
+            cursor: pointer;
         }
         
         .bloc-de-deux-carte {
             display: flex;
             flex-direction: column;
             height: 400px;
+            cursor: pointer;
         }
         
         .bloc-de-une-carte:hover {
@@ -457,6 +465,9 @@
             #popularites {
                 width: 90%;
                 margin: 20px;
+            }
+            .bloc-info-heberg {
+                margin: 0 10px;
             }
             .hotel-pop {
                 height: 100px;
