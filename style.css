@@ -436,6 +436,12 @@
         }
         
         @media screen and (min-width: 600px) and (max-width: 1023px) {
+            span.recher {
+                display: none;
+            }
+            .loupe {
+                display: block;
+            }
             .heberg-pop {
                 width: 100%;
                 display: flex;
@@ -560,7 +566,7 @@
             #search {
                 padding-right: 50px;
             }
-            p.recher {
+            span.recher {
                 display: none;
             }
             .loupe {
