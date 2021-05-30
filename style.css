@@ -187,8 +187,6 @@
         .heberg-pop {
             width: 100%;
             display: flex;
-            justify-content: space-between;
-            font-size: 1em;
         }
         
         #hebergements {
@@ -219,7 +217,6 @@
             background-color: white;
             border-radius: 25px;
             box-shadow: 5px 3px 3px rgb(233, 230, 230);
-            height: 220px;
             cursor: pointer;
         }
         
@@ -289,6 +286,7 @@
             margin: 5px 15px 25px 15px;
             border-radius: 25px;
             box-shadow: 5px 3px 3px rgb(233, 230, 230);
+            min-width: 290px;
             cursor: pointer;
         }
         
