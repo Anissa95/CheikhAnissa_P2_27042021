@@ -104,7 +104,7 @@
         }
         
         .btn-recherche:hover {
-            background-color: rgb(38, 123, 219);
+            background-color: rgb(19, 100, 192);
         }
         
         .loupe {
@@ -116,7 +116,6 @@
             flex-wrap: wrap;
             gap: 15px;
             align-items: center;
-            justify-content: flex-start;
             margin-bottom: 30px;
         }
         
@@ -373,6 +372,7 @@
             padding: 10px 0 10px 20px;
             margin: 0;
             height: 28px;
+            font-size: 14px;
         }
         
         .bloc-de-deux-carte img {
@@ -480,24 +480,22 @@
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
-            }
-            .bloc-de-une-carte1,
-            .bloc-de-une-carte2 {
-                margin-right: 20px;
+                width: 60%;
+                margin: 20px 0;
             }
             .visite-site {
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
             }
-            .bloc-de-deux-carte {
-                width: 60%;
-                margin: 20px 0;
+            .bloc-viste.bloc-de-une-carte {
+                margin: 20px 10px;
             }
             .bloc-de-une-carte1,
             .bloc-de-une-carte2 {
                 width: 100%;
                 height: 200px;
+                margin: 0 10px;
             }
             .visite-site h4 {
                 padding: 0 10px;
@@ -522,6 +520,7 @@
             .bas {
                 margin-right: 20px;
                 font-size: 14px;
+                padding: 0 10px 0 20px
             }
         }
         
@@ -573,9 +572,6 @@
             }
             .titre h2 {
                 margin-top: 0;
-            }
-            #search {
-                padding-right: 50px;
             }
             span.recher {
                 display: none;
@@ -708,5 +704,6 @@
             .bas {
                 padding: 0;
                 margin-left: 40px;
+                font-size: 14px;
             }
         }
