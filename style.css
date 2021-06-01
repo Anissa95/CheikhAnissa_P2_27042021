@@ -14,7 +14,7 @@
         position: relative;
         width: 100%;
         height: 100px;
-        margin: 0 auto;
+        margin: 0;
     }
     
     .logo {
@@ -105,11 +105,12 @@
         padding: 15px;
         border: none;
         color: white;
-        text-align: center;
         cursor: pointer;
         display: flex;
         flex-direction: column;
+        justify-content: center;
         font-weight: bold;
+        font-size: 16px;
     }
     
     .btn-recherche:hover {
@@ -220,7 +221,7 @@
     
     .galerie {
         width: 30%;
-        padding: 5px;
+        padding: 5px 5px 10px 5px;
         margin-bottom: 30px;
         background-color: white;
         border-radius: 25px;
@@ -244,10 +245,11 @@
         display: flex;
         justify-content: space-around;
         flex-direction: column;
+        padding-top: 5px;
     }
     
     .bloc-info-heberg h4 {
-        margin: 0 0 5px 0;
+        margin: 0;
     }
     
     .bloc-info-heberg p {
@@ -286,7 +288,7 @@
     #popularites {
         background-color: #F2F2F2;
         width: 30%;
-        padding: 30px;
+        padding: 20px;
         border-radius: 30px;
         margin: 20px;
         display: flex;
@@ -299,7 +301,7 @@
         justify-content: space-around;
         background-color: white;
         padding: 5px;
-        margin: 5px 15px 25px 15px;
+        margin: 5px 5px 25px 5px;
         border-radius: 25px;
         box-shadow: 5px 3px 3px rgb(233, 230, 230);
         min-width: 290px;
@@ -329,7 +331,7 @@
     }
     
     .etoile {
-        margin-top: 40px;
+        margin-top: 60px;
     }
     /*Activités a marseille*/
     
@@ -365,7 +367,7 @@
     }
     
     .bloc-de-une-carte {
-        height: 400px;
+        height: 397px;
         box-shadow: 5px 3px 3px #F2F2F2;
         cursor: pointer;
     }
@@ -443,8 +445,8 @@
     }
     
     .bas {
-        margin-right: 100px;
         padding-left: 40px;
+        width: 30%;
     }
     
     ul {
@@ -504,9 +506,7 @@
             width: 100%;
         }
         footer {
-            position: relative;
-            bottom: 0px;
-            margin-top: 100px;
+            margin-top: 60px;
         }
     }
     
@@ -543,6 +543,9 @@
             height: 100px;
             width: 100px;
         }
+        .etoile {
+            margin-top: 30px;
+        }
         .bloc-de-deux-carte {
             display: flex;
             flex-direction: row;
@@ -554,6 +557,7 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
+            margin-bottom: 50px;
         }
         .bloc-viste.bloc-de-une-carte {
             margin: 20px 10px;
@@ -589,6 +593,11 @@
             margin: 0;
             flex-wrap: wrap;
             justify-content: start;
+        }
+        .bas {
+            font-size: 16px;
+            min-width: 270px;
+            width: 20%;
         }
     }
     
@@ -629,12 +638,12 @@
             width: 50px;
         }
         .info-filtre {
-            margin: 20px;
+            margin: 35px 20px;
             align-items: flex-start;
         }
         i.fas.fa-info {
             height: 20px;
-            width: 30px;
+            width: 35px;
         }
         .filtre-hebergement,
         .galerie,
@@ -645,11 +654,13 @@
         .bloc-info-heberg {
             display: flex;
             flex-direction: column;
-            height: 50px;
-            margin: 10px 20px;
+            justify-content: space-between;
+        }
+        .bloc-info-heberg p {
+            padding-bottom: 20px;
         }
         .pop1 .bloc-info-heberg {
-            margin: 0 10px;
+            margin: 0 15px;
         }
         .pop {
             padding: 0;
@@ -661,7 +672,6 @@
         .pop1 {
             display: flex;
             justify-content: flex-start;
-            align-items: center;
             width: 100%;
             margin: 0;
         }
@@ -674,6 +684,13 @@
         #hebergements h3 {
             margin-left: 20px;
             font-size: 16px;
+        }
+        .galerie {
+            height: 220px;
+            box-shadow: 1px 1px 12px #F2F2F2;
+        }
+        .galerie img {
+            height: 135px;
         }
         #popularites {
             width: 100%;
@@ -735,6 +752,7 @@
         .bas {
             padding: 0;
             margin-left: 40px;
+            width: 80%;
         }
         .bas a {
             font-size: 16px;
