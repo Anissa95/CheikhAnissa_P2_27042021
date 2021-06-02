@@ -18,7 +18,7 @@
     }
     
     .logo {
-        margin-left: 20px;
+        margin-left: 40px;
     }
     
     .hebergement-activite {
@@ -52,7 +52,7 @@
     
     .inscription {
         border-top: 2px solid transparent;
-        padding: 40px 30px;
+        padding: 30px 20px;
         color: blue;
         font-weight: bold;
         z-index: 1;
@@ -61,12 +61,20 @@
     }
     /*recherche et information*/
     
+    h2 {
+        font-size: 24px;
+    }
+    
+    h3 {
+        font-size: 20px;
+    }
+    
     .titre h2 {
         margin-top: 0;
     }
     
     .infos {
-        padding-left: 20px;
+        padding-left: 40px;
     }
     
     .bloc-recherche {
@@ -205,11 +213,11 @@
         background-color: #F2F2F2;
         padding: 30px;
         border-radius: 30px;
-        margin: 20px;
+        margin: 20px 20px 20px 40px;
     }
     
     #hebergements h2 {
-        margin-left: 10px;
+        margin-left: 5px;
     }
     
     .lieu-hebergement {
@@ -272,7 +280,7 @@
     }
     
     #hebergements h3 {
-        margin: 15px 10px;
+        margin: 15px 0;
     }
     /*popularités*/
     
@@ -281,8 +289,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 0 5px;
-        margin: 0px 20px;
+        margin: 0px 10px;
     }
     
     #popularites {
@@ -290,7 +297,7 @@
         width: 30%;
         padding: 20px;
         border-radius: 30px;
-        margin: 20px;
+        margin: 20px 40px 20px 20px;
         display: flex;
         flex-direction: column;
     }
@@ -340,18 +347,16 @@
         display: flex;
         flex-direction: column;
         border-radius: 30px;
-        margin: 10px;
+        width: 100%;
     }
     
     #activites h2 {
-        padding-left: 20px;
-        margin-bottom: 10px;
+        margin: 30px 10px 10px 40px;
     }
     
     .visite-site {
         display: flex;
-        width: 100%;
-        margin-bottom: 30px;
+        margin: 0 20px;
         padding-bottom: 10px;
     }
     
@@ -478,14 +483,18 @@
             transform: scale(1.1);
             text-shadow: #0065FC 0 0 20px;
         }
+        .inscription {
+            padding: 40px 20px 20px;
+            margin: 0;
+        }
         .hebergement-activite {
             width: 100%;
             right: 0;
             position: absolute;
-            top: 60px;
+            top: 100px;
         }
         .hebergement-activite a {
-            padding: 40px 30px 10px 30px;
+            padding: 10px 30px;
             width: 100%;
             margin: 0;
             display: flex;
@@ -532,6 +541,9 @@
         #popularites {
             width: 90%;
             margin: 20px;
+        }
+        #hebergements {
+            padding: 20px;
         }
         .bloc-info-heberg {
             margin: 0 10px;
@@ -602,6 +614,9 @@
     }
     
     @media screen and (max-width: 599px) {
+        .logo {
+            margin-left: 20px;
+        }
         h2 {
             font-size: 23px;
         }
@@ -680,6 +695,7 @@
             order: -1;
             padding: 0;
             width: 100%;
+            margin: 0;
         }
         #hebergements h3 {
             margin-left: 20px;
@@ -688,6 +704,7 @@
         .galerie {
             height: 220px;
             box-shadow: 1px 1px 12px #F2F2F2;
+            width: 87%;
         }
         .galerie img {
             height: 135px;
@@ -698,8 +715,14 @@
             margin: 0;
             padding: 0;
         }
+        .hotel-pop {
+            margin: 5px 20px 25px 20px;
+        }
         #activites {
             margin: 0;
+        }
+        #activites h2 {
+            margin-left: 20px;
         }
         .heberg-pop {
             display: flex;
@@ -714,33 +737,38 @@
             flex-direction: column;
             align-content: center;
             align-items: center;
+            margin: 0;
+        }
+        .visite-site {
+            margin: 0 0 50px 0;
         }
         .bloc-de-une-carte {
-            width: 80%;
             height: 200px;
         }
         .bloc-de-deux-carte {
-            width: 80%;
             padding: 10px;
             height: 410px;
         }
         .bloc-de-une-carte1,
         .bloc-de-une-carte2 {
             width: 100%;
-            height: 200px;
+        }
+        .bloc-viste {
+            margin: 10px 0;
+            width: 90%;
         }
         .pop h2 {
             margin-left: 20px;
         }
         #hebergements h2 {
-            margin-left: 20px;
+            margin: 35px 20px 10px 20px;
         }
         .bloc-de-une-carte img,
         .bloc-de-deux-carte img {
             height: 150px;
         }
         footer {
-            padding-bottom: 40px;
+            margin-bottom: 0;
             width: 100%;
             font-size: 18px;
         }
