@@ -338,7 +338,7 @@
     }
     
     .etoile {
-        margin-top: 60px;
+        margin: 50px 0 5px;
     }
     /*Activités a marseille*/
     
@@ -653,12 +653,14 @@
             width: 50px;
         }
         .info-filtre {
-            margin: 35px 20px;
+            margin-left: 20px;
             align-items: flex-start;
+            font-size: 16px;
         }
         i.fas.fa-info {
-            height: 20px;
-            width: 35px;
+            min-height: 15px;
+            min-width: 25px;
+            border-radius: 50%;
         }
         .filtre-hebergement,
         .galerie,
