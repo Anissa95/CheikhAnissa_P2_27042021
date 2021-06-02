@@ -742,18 +742,19 @@
             margin: 0;
         }
         .visite-site {
-            margin: 0 0 50px 0;
+            margin: 0 0 30px 0;
         }
         .bloc-de-une-carte {
             height: 200px;
         }
         .bloc-de-deux-carte {
             padding: 10px;
-            height: 410px;
+            height: 440px;
         }
         .bloc-de-une-carte1,
         .bloc-de-une-carte2 {
             width: 100%;
+            margin-bottom: 33px;
         }
         .bloc-viste {
             margin: 10px 0;
