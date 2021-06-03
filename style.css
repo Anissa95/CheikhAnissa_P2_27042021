@@ -192,10 +192,10 @@
         align-items: center;
         color: blue;
         background: white;
-        border: 2px solid #d9d9d9;
-        border-radius: 30px;
-        height: 25px;
-        width: 25px;
+        border: 1px solid #d9d9d9;
+        border-radius: 50%;
+        height: 20px;
+        width: 20px;
         margin-right: 10px;
         font-size: 14px;
     }
@@ -222,7 +222,6 @@
     
     .lieu-hebergement {
         display: flex;
-        width: 100%;
         justify-content: space-between;
         flex-wrap: wrap;
     }
@@ -249,7 +248,7 @@
     
     .bloc-info-heberg {
         font-size: 0.8em;
-        margin: 0 30px 0 10px;
+        margin-left: 10px;
         display: flex;
         justify-content: space-around;
         flex-direction: column;
@@ -281,11 +280,11 @@
     
     #hebergements h3 {
         margin: 15px 0;
+        cursor: pointer;
     }
     /*popularités*/
     
     .pop {
-        width: 90%;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -527,29 +526,42 @@
             display: block;
         }
         .heberg-pop {
-            width: 100%;
             display: flex;
-            flex-direction: column;
+            flex-direction: column-reverse;
             align-items: center;
             margin: 0;
             padding: 0;
         }
+        #hebergements h2,
+        #hebergements h3 {
+            margin-left: 20px;
+        }
         .lieu-hebergement {
             flex-wrap: wrap;
-        }
-        #hebergements,
-        #popularites {
-            width: 90%;
-            margin: 20px;
+            margin: 0 20px;
         }
         #hebergements {
-            padding: 20px;
+            width: auto;
+            margin: 10px;
+            padding: 0;
+            background-color: white;
+        }
+        #popularites {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            border-radius: 0;
+        }
+        .pop {
+            margin: 0px 30px;
         }
         .bloc-info-heberg {
             margin: 0 10px;
         }
         .hotel-pop {
             height: 100px;
+            margin: 5px 30px 25px 30px;
+            width: auto;
         }
         .hotel-pop img {
             height: 100px;
@@ -562,7 +574,7 @@
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            width: 60%;
+            width: 65%;
             margin: 20px 0;
         }
         .visite-site {
@@ -573,6 +585,7 @@
         }
         .bloc-viste.bloc-de-une-carte {
             margin: 20px 10px;
+            width: 30%;
         }
         .bloc-de-une-carte1,
         .bloc-de-une-carte2 {
@@ -594,7 +607,7 @@
             width: 100%;
         }
         #activites h2 {
-            padding-left: 50px;
+            margin-left: 30px;
         }
         footer {
             width: 100%;
@@ -654,19 +667,18 @@
         }
         .info-filtre {
             margin-left: 20px;
-            align-items: flex-start;
+            align-items: center;
             font-size: 16px;
         }
         i.fas.fa-info {
             min-height: 15px;
-            min-width: 25px;
+            min-width: 20px;
             border-radius: 50%;
+            margin-bottom: auto;
         }
-        .filtre-hebergement,
-        .galerie,
-        .pop1 {
-            width: 90%;
-            margin: 10px 0;
+        .filtre-hebergement {
+            margin-left: 5px;
+            width: 100%;
         }
         .bloc-info-heberg {
             display: flex;
@@ -675,9 +687,6 @@
         }
         .bloc-info-heberg p {
             padding-bottom: 20px;
-        }
-        .pop1 .bloc-info-heberg {
-            margin: 0 15px;
         }
         .pop {
             padding: 0;
@@ -694,7 +703,6 @@
         }
         #hebergements {
             background-color: white;
-            order: -1;
             padding: 0;
             width: 100%;
             margin: 0;
@@ -706,7 +714,8 @@
         .galerie {
             height: 220px;
             box-shadow: 1px 1px 12px #F2F2F2;
-            width: 87%;
+            width: 100%;
+            margin: 15px 20px;
         }
         .galerie img {
             height: 135px;
@@ -733,16 +742,19 @@
             align-items: center;
             margin: 0;
         }
-        .lieu-hebergement,
+        .lieu-hebergement {
+            display: flex;
+            align-content: center;
+            align-items: center;
+            margin: 0;
+            width: 100%;
+        }
         .visite-site {
             display: flex;
             flex-direction: column;
             align-content: center;
             align-items: center;
-            margin: 0;
-        }
-        .visite-site {
-            margin: 0 0 30px 0;
+            margin: 20px;
         }
         .bloc-de-une-carte {
             height: 200px;
@@ -758,7 +770,7 @@
         }
         .bloc-viste {
             margin: 10px 0;
-            width: 90%;
+            width: 100%;
         }
         .pop h2 {
             margin-left: 20px;
