@@ -324,6 +324,10 @@
         text-decoration: none;
     }
     
+    .pop {
+        font-size: 20px;
+    }
+    
     .pop1 {
         display: flex;
     }
@@ -690,7 +694,7 @@
         }
         .pop {
             padding: 0;
-            margin: 0;
+            margin: 20px 20px 0 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -771,9 +775,6 @@
         .bloc-viste {
             margin: 10px 0;
             width: 100%;
-        }
-        .pop h2 {
-            margin-left: 20px;
         }
         #hebergements h2 {
             margin: 35px 20px 10px 20px;
