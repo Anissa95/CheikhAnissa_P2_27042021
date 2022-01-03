@@ -1,5 +1,7 @@
 ## ProjetN°2: Transformer une maquette en site web
-La chouette agence est une agence de web design basée à Lyon. La visibilité de la société a diminuée récemment. En tapant "Entreprise web design Lyon" sur Internet le site de l’agence apparaît seulement en deuxième page des moteurs de recherche.
+Reservia, une petite entreprise proposant un outil de planification de vacances. Leur site permet aux usagers
+de trouver des hébergements et des activités dans la ville de leur choix. Les hébergements
+peuvent également être filtrés par thématique, par exemple leur budget ou leur ambiance.
 
 ## But du projet 
 * Les usagers pourront rechercher des hébergements dans la ville de leur choix. Le champ de recherche est donc un champ de saisie, dont le texte peut être édité par l’usager. En revanche, à ce stade, le bouton de recherche ne sera pas fonctionnel.
